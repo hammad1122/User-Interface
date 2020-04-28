@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Missouri Boutique and Salon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="mustache.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <style>
+        /* Footer */
+		.footer {
+			padding: 20px;
+			text-align: center;
+			background: var(--main-col2);
+		}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <a href="index.html" class="navbar-brand">
+            <img src="images/Logo.jpg" alt="Missouri Boutique & Salon" role="link" style="width:200px;">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a href="responsivePage.html" class="nav-link" role="link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" role="link">CONTACT US</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" role="link">SIGN UP</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" role="link">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" role="link">ONLINE SHOPPING</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-9 col-md-6">
+                <center><h1>ABOUT US</h1></center>
+                <p>    A retail shop that specializes in gifts, fashionable clothes, accessories, shoes for both men and women wear. Full Salon services for ladies</p>
+            </div>
+
+        </div>
+
+        <script id="itemList" type="x-tmpl-mustache">
+            <div class="row">
+                {{#item}}
+                <div class="items1 col-sm-6 col-md-3 form-group">
+                    <center>
+                        <br>{{name}}<br><br>
+                        <img src="{{img}}" />
+                        <br><br>
+                </div>
+                {{/item}}
+            </div>
+
+        </script>
+
+        <div id="target"></div>
+
+    </div>
+
+    <div class="footer">
+        <h2>&copy;Missouri Boutique and Salon</h2>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
